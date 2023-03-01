@@ -34,6 +34,9 @@ func main() {
 			fmt.Print("Ingin lanjut tranksaksi lagi? (ya/n):")
 			fmt.Scanf("%s\n", &ulangi)
 			operasi = strings.ToLower(ulangi) == "ya"
+			for i := range Operasi.Simpan {
+				Operasi.Simpan[i] = 0
+			}
 		}
 
 	}
