@@ -66,3 +66,10 @@ func (t *Tranksaksi) MasukkanUang() {
 	fmt.Println("Pembayaran Lunas")
 	fmt.Println()
 }
+
+func (t *Tranksaksi) ResetIsiSlice() {
+	for i := range t.Simpan {
+		t.Simpan[i] = 0
+	}
+}
+
